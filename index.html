@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <form>
+        <div>Launching Users</div>
+        <div><input name="launchingUsers" value="130"></div>
+        <div>Growth</div>
+        <div><input name="growth" value="100"></div>
+        <div>churn</div>
+        <div><input name="churn" value="40"></div>
+        <div><button onclick="cal(event)">Year 5:</button></div>
+    </form>
+
+    <div class="result"></div>
+
+    <canvas id="myChart" class="canvas"></canvas>
+
+
+<script src="main.js"></script>
+</body>
+</html>
