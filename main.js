@@ -22,26 +22,18 @@ function cal(event){
     growth=parseFloat(growth);
     churn=parseFloat(churn);
 
-    let finalAmount;
     let data = [];
     let labels = [];
 
     for (let a=1; a<=5; a++){
-        finalAmount = [];
-        finalAmount.push(u1);
-        finalAmount.push(u2);
-        finalAmount.push(u3);
-        finalAmount.push(u4);
-        finalAmount.push(u5);
         data.push(u1,u2,u3,u4,u5);
         labels.push(a);
     }
-    console.log(data);
 
     let result = document.querySelector("[class='result']");
-    console.log("final amount ", finalAmount[4]);
+    console.log("final amount ", data[4]);
 
-    result.innerHTML = Math.trunc(finalAmount[4]) + "users";
+    result.innerHTML = Math.trunc(data[4]) + "users";
     createChart(labels,data);
 }
 
